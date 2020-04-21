@@ -19,5 +19,3 @@ export default function Login() {
         </div>
     )
 }
-//Nao sei fazer saporra
-//Ta aprendendo agora, caraio!
