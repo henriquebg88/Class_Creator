@@ -11,7 +11,7 @@ export default function Login() {
                 <h2>Login</h2>
 
                 <form action="">
-                    <input type="text" name="name" placeholder="Email cadastrado"></input>
+                    <input type="text" name="email" placeholder="Email cadastrado"></input>
                     <input type="password" name="password" placeholder="Senha"></input>
                     <button type="submit">Logar</button>
                 </form>
