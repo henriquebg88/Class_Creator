@@ -1,0 +1,14 @@
+.floating-box{
+    width: 250px;
+}
+.floating-box h2{
+    align-self: end;
+
+    margin-bottom: 15px;
+}
+.floating-box a{
+    padding-top: 5px;
+    align-self: end;
+
+    font-size: .7em;
+}

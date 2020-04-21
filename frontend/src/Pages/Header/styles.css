@@ -1,0 +1,26 @@
+header{
+    background-color: gainsboro;
+    color: #666;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+header h1{
+    color: #666;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+header h2{
+    color: #888;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+}
