@@ -10,8 +10,12 @@ export default function Login() {
 
                 <h2>Login</h2>
 
-                <input type="text" name="name" placeholder="Email cadastrado"></input>
-                <input type="password" name="password" placeholder="Senha"></input>
+                <form action="">
+                    <input type="text" name="name" placeholder="Email cadastrado"></input>
+                    <input type="password" name="password" placeholder="Senha"></input>
+                    <button type="submit">Logar</button>
+                </form>
+
                 <a href="/Registro"><MdPersonAdd></MdPersonAdd> Ainda não criei a minha conta</a>
 
                 

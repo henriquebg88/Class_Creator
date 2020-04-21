@@ -9,7 +9,12 @@
     font-family: 'Raleway', sans-serif;
 }
 a{
+    transition: 0.2s;
+
     text-decoration: none;
+}
+a:hover{
+    filter: brightness(0.6);
 }
 .container{
     width: 100%;
@@ -32,14 +37,35 @@ a{
     align-items: center;
     margin: auto;
 }
-input{
+input, button{
+    text-align: center;
+    justify-content: center;
+
     width: 100%;
-    height: 30px;
-    padding: 20px;
+    height: 100%;
+    padding: 15px;
     margin: 1px 0;
     border-radius: 8px;
     border: 1px solid #ccc;
+
+    display: inline-flex;
+
+    transition: 0.2s;
 }
+button{
+    margin: 10px 0;
+    color: white;
+    background-color: #888;
+
+    text-transform: uppercase;
+    font-weight: 600;
+}
+button:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 4px 2px rgba(0,0,0,0.1));
+    transform: scale(1.02);
+}
+
 input::placeholder{
     color: #aaa;
 }
