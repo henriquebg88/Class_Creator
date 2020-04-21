@@ -4,15 +4,14 @@ import './global.css';
 
 import Header from './Pages/Header';
 import Footer from './Pages/Footer';
-import Login from './Pages/Login';
+
+import Routes from './routes';
 
 function App() {
   return (
     <div>
       <Header>Home</Header>
-
-      <Login></Login>
-
+        <Routes></Routes>
       <Footer></Footer>
     </div>
   );

@@ -16,7 +16,7 @@ export default function Login() {
                     <button type="submit">Logar</button>
                 </form>
 
-                <a href="/Registro"><MdPersonAdd></MdPersonAdd> Ainda não criei a minha conta</a>
+                <a href="/registro"><MdPersonAdd></MdPersonAdd> Ainda não criei a minha conta</a>
 
                 
             </section>
