@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MdPersonAdd } from 'react-icons/md';
 
 import './styles.css'
@@ -16,7 +17,10 @@ export default function Login() {
                     <button type="submit">Logar</button>
                 </form>
 
-                <a href="/registro"><MdPersonAdd></MdPersonAdd> Ainda não criei a minha conta</a>
+                <Link className='Icon-Link' to="/registro">
+                    <MdPersonAdd/>
+                    <p>Criar minha conta</p> 
+                </Link>
 
                 
             </section>

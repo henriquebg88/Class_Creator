@@ -1,5 +1,6 @@
 import React from 'react';
-import { MdArrowBack } from 'react-icons/md'
+import { MdArrowBack } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 import './styles.css';
 
@@ -13,7 +14,12 @@ export default function Register() {
                 <form action="">
                     <input type="text" name="name" placeholder="Seu nome ou da instituição" ></input>
 
-                    <input type="text" name="email" placeholder="Email cadastrado"></input>
+                    <div className='merge-inputs'>
+                        <input type="text" name="city" placeholder='Cidade' />
+                        <input className="uppercase UF" type="text" name='uf' maxLength='2' placeholder="uf" />
+                    </div>
+
+                    <input className="email" type="text" name="email" placeholder="Email"></input>
 
                     <input type="password" name="password" placeholder="Senha"></input>
                     <input type="password" name="password" placeholder="Confirmar senha"></input>
@@ -21,9 +27,12 @@ export default function Register() {
                     <button type="submit">Cadastrar</button>
                 </form>
 
-                <a href="/"><MdArrowBack/> Voltar</a>
+                <Link className='Icon-Link' to="/">
+                    <MdArrowBack />
+                    <p>Voltar</p>
+                </Link>
 
-                
+
             </section>
         </div>
     )
