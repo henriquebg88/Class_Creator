@@ -5,23 +5,41 @@
     box-shadow: 0 0 100px rgba(0,0,0,0.1);
     padding: 20px 40px;
 }
-.usuario{
+.icons-options{
+    display: flex;
+}
+.usuario-info{
     margin-bottom: 40px;
     width: fit-content;
 }
-.usuario h1{
+.icons-options a{
+    margin-left: 20px;
+    height: 100%;
+}
+.icons-options a svg{
+    font-size: 1.5em;
+    margin: 0;
+}
+.usuario-info h1{
     font-size: 2.5em;
 }
-.usuario p{
+.usuario-info p{
     text-align: right;
     color: #ccc;
 }
 #id{
     font-size: 0.8em;
 }
-#user-data p{
+section#user-data p{
     font-weight: 300;
     margin-bottom: 10px;
+}
+section#user-data.edit{
+    display: flex;
+    justify-content: space-between;
+}
+section#user-data.edit a svg{
+    font-size: 2em;
 }
 p span{
     font-weight: bold;
@@ -53,7 +71,7 @@ p span{
     transition: 0.1s;
 }
 .lista-turmas.edit ul li{
-    border: 1px dashed black;
+    border: 3px dashed #aaa;
 }
 .lista-turmas.edit ul li svg{
     display: none;
@@ -97,5 +115,6 @@ p span{
     grid-template-columns: max-content;
 }
 div.merge-inputs div{
-    width: 220px;
+    width: 212px;
+    margin-right: 8px;
 }

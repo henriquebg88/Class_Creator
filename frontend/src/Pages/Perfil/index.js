@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { MdEdit, MdGroupAdd } from 'react-icons/md';
 
 import './styles.css';
 
@@ -7,17 +9,27 @@ export default function Perfil() {
         <div className="container">
             <div className="paper">
                 <section id='user-data'>
-                    <div className="usuario">
-                        <h1>Arara Azul</h1>
-                        <p id='id'>id: 34636577</p>
+                    <div className='icons-options'>
+                        <div className="usuario-info">
+                            <h1>Arara Azul</h1>
+                            <p id='id'>id: 34636577</p>
+                        </div>
+                        <Link to='/perfil/edit' ><MdEdit/></Link>
                     </div>
+                    
+
                     <p id='city'><span>Local:</span> Brasília - DF</p>
 
                     <p id='email'><span>Email:</span> araraAzul@gmail.com</p>
                 </section>
                 <hr/>
                 <section id='turmas'>
-                    <h2>Turmas cadastradas</h2>
+                    <div className="icons-options">
+                        <h2>Turmas cadastradas</h2>
+                        <Link><MdGroupAdd/></Link>
+                        <Link to='/perfil/edit' ><MdEdit/></Link>
+
+                    </div>
 
                     <div className='lista-turmas'>
                         <ul>

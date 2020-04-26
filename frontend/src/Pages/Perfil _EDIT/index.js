@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MdDelete, MdEdit } from 'react-icons/md'
+import { MdDelete, MdEdit, MdArrowBack } from 'react-icons/md'
 
 import '../Perfil/styles.css';
 
@@ -8,7 +8,8 @@ export default function Perfil_edit() {
     return (
         <div className="container">
             <div className="paper">
-                <section id='user-data'>
+                <section id='user-data' className='edit'>
+
                     <form action="post">
                         <div className="label-input">
                             <label htmlFor=""><span>Nome:</span></label>
@@ -32,6 +33,9 @@ export default function Perfil_edit() {
                             <input type='email' id='email' defaultValue='araraAzul@gmail.com' ></input>
                         </div>
                     </form>
+
+                    <Link to='/perfil' ><MdArrowBack/></Link>
+
                 </section>
                 <hr/>
                 <section id='turmas'>
