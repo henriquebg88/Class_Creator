@@ -1,7 +1,6 @@
 footer {
-    background-color: #eee;
+    background-color: #ccc;
     font-size: 10px;
-    color: #888;
 
     position: fixed;
     width: 100%;
@@ -9,4 +8,7 @@ footer {
     padding: 10px;
     padding-left: 40px;
     /* teste */
+}
+footer p{
+    color: #666;
 }

@@ -1,0 +1,101 @@
+.paper{
+    background-color: white;
+    width: 720px;
+    height: 100%;
+    box-shadow: 0 0 100px rgba(0,0,0,0.1);
+    padding: 20px 40px;
+}
+.usuario{
+    margin-bottom: 40px;
+    width: fit-content;
+}
+.usuario h1{
+    font-size: 2.5em;
+}
+.usuario p{
+    text-align: right;
+    color: #ccc;
+}
+#id{
+    font-size: 0.8em;
+}
+#user-data p{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+p span{
+    font-weight: bold;
+}
+#turmas h2{
+    margin-bottom: 30px;
+}
+.lista-turmas ul{
+    grid-template-columns: repeat(7, 1fr);
+    grid-row-gap: 12px;
+    justify-items: center;
+    
+    display: grid;
+}
+
+.lista-turmas ul li{
+    background-color: #ccc;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    
+    list-style: none;
+    text-transform: uppercase;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    transition: 0.1s;
+}
+.lista-turmas.edit ul li{
+    border: 1px dashed black;
+}
+.lista-turmas.edit ul li svg{
+    display: none;
+}
+.lista-turmas.edit ul li:hover svg{
+    display: inherit;
+}
+.lista-turmas.edit ul li:hover p{
+    display: none;
+}
+
+.lista-turmas.edit .delete-icon svg{
+    font-size: 2em;
+    margin: auto;
+}
+.lista-turmas.edit .edit-icon svg{
+    font-size: 2em;
+    margin: auto;
+}
+.lista-turmas ul li:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 4px 2px rgba(0,0,0,0.1));
+    transform: scale(1.04);
+}
+.lista-turmas ul li p{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.8em;
+
+    margin: 0;
+}
+#uf{
+    width: 80px;
+}
+.label-input{
+    display: grid;
+    width: 300px;
+}
+.merge-inputs input{
+    height: auto;
+    grid-template-columns: max-content;
+}
+div.merge-inputs div{
+    width: 220px;
+}
